@@ -62,7 +62,11 @@ namespace Piranha.Localization
 			};
 
 			//
-			// Post edit toolbar
+			// Category hooks are currently missing in the core framework.
+			//
+
+			//
+			// Page edit toolbar
 			//
 			Hooks.Manager.Toolbar.PageEditToolbarRender += (url, str, model) => {
 				str.Append(String.Format("<li><a href=\"{0}\">Default</a></li>",
